@@ -4,5 +4,5 @@
 	],
 	"ext": ".ts,.js",
 	"ignore": [],
-	"exec": "ts-node ./src/main.ts"
+	"exec": "ts-node ./src/main.ts -r dotenv/config"
 }
