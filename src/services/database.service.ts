@@ -1,8 +1,9 @@
 import {Connection, createConnection, ObjectType} from "typeorm";
-import {inject} from 'inversify'
+import {inject, injectable} from 'inversify'
 import {TYPES} from '../core/types.core'
 import {Logger} from '../services/logger.service'
 
+@injectable()
 export class DatabaseService{
 private static connection: Connection;
 
